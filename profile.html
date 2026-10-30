@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+            <h1>Driver Profile</h1>
+
+            <input type="text"
+                   id="driverName"
+                   placeholder="Driver Name">
+
+            <input type="number"
+                   id="age"
+                   placeholder="Age">
+
+            <input type="number"
+                   id="experience"
+                   placeholder="Driving Experience (Years)">
+
+            <input type="text"
+                   id="carModel"
+                   placeholder="Car Model">
+
+            <select id="language">
+                <option value="">Select Preferred Language</option>
+                <option value="English">English</option>
+                <option value="Tamil">Tamil</option>
+            </select>
+
+            <button onclick="saveProfile()">
+                Save Profile
+            </button>
+
+            <p id="profileMessage"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

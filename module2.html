@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driving Data Collection & Monitoring</title>
+
+    <link rel="stylesheet" href="module2.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>AI Driving Behaviour Coach</h1>
+            <p>Module 2 - Driving Data Collection & Monitoring</p>
+        </header>
+
+        <section class="status-section">
+            <div>
+                <h2>Live Driving Monitoring</h2>
+                <p id="monitorStatus">Monitoring is currently stopped</p>
+            </div>
+
+            <button id="startBtn" onclick="startMonitoring()">
+                Start Monitoring
+            </button>
+        </section>
+
+
+        <section class="dashboard">
+
+            <!-- Speed -->
+            <div class="card">
+                <div class="icon">🚗</div>
+                <h3>Speed</h3>
+                <div class="value">
+                    <span id="speed">0</span>
+                    <small>km/h</small>
+                </div>
+                <p>Current vehicle speed</p>
+            </div>
+
+
+            <!-- Acceleration -->
+            <div class="card">
+                <div class="icon">⚡</div>
+                <h3>Acceleration</h3>
+                <div class="value">
+                    <span id="acceleration">0.0</span>
+                    <small>m/s²</small>
+                </div>
+                <p>Current acceleration</p>
+            </div>
+
+
+            <!-- Braking -->
+            <div class="card">
+                <div class="icon">🛑</div>
+                <h3>Braking</h3>
+                <div class="value">
+                    <span id="braking">Normal</span>
+                </div>
+                <p>Braking behaviour</p>
+            </div>
+
+
+            <!-- Lane -->
+            <div class="card">
+                <div class="icon">🛣️</div>
+                <h3>Lane Movement</h3>
+                <div class="value">
+                    <span id="lane">Stable</span>
+                </div>
+                <p>Lane position</p>
+            </div>
+
+        </section>
+
+
+        <!-- GPS -->
+        <section class="gps-card">
+
+            <h2>📍 GPS Location</h2>
+
+            <div class="gps-info">
+                <div>
+                    <span>Latitude</span>
+                    <strong id="latitude">--</strong>
+                </div>
+
+                <div>
+                    <span>Longitude</span>
+                    <strong id="longitude">--</strong>
+                </div>
+
+                <div>
+                    <span>Location Status</span>
+                    <strong id="gpsStatus">Waiting...</strong>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Data Collection -->
+        <section class="collection">
+
+            <h2>Driving Data Collection</h2>
+
+            <div class="data-box">
+
+                <p>
+                    <strong>Data Collection:</strong>
+                    <span id="dataStatus">Inactive</span>
+                </p>
+
+                <p>
+                    <strong>Data Points Collected:</strong>
+                    <span id="dataCount">0</span>
+                </p>
+
+                <p>
+                    <strong>Vehicle:</strong>
+                    <span id="vehicleName">Loading...</span>
+                </p>
+                <button onclick="goToModule3()">
+                    Continue to AI Analysis
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+            <p>AI-Based Driving Behaviour Coach © 2026</p>
+        </footer>
+
+    </div>
+
+
+    <script src="module2.js"></script>
+
+</body>
+</html>

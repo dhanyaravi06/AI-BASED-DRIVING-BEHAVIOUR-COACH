@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Driving Behaviour Coach</title>
+
+    <link rel="stylesheet" href="module4.css">
+</head>
+<body>
+
+    <div class="page">
+
+        <!-- Header -->
+        <div class="header">
+            <h1>AI Driving Behaviour Coach</h1>
+            <p>Module 4 - Personalised Coaching &amp; Performance Tracking</p>
+        </div>
+
+        <!-- Personalised Coaching -->
+        <div class="top-box">
+            <div>
+                <h2>Personalised Coaching</h2>
+                <p>Get personalised feedback based on your driving performance</p>
+            </div>
+
+            <button onclick="generateCoaching()">
+                Generate Coaching
+            </button>
+        </div>
+
+        <!-- Driving Performance Cards -->
+        <div class="cards">
+
+            <!-- Safety Score -->
+            <div class="card">
+                <div class="emoji">🛡️</div>
+                <h3>Safety Score</h3>
+
+                <div class="input-row">
+                    <input type="number"
+                           id="safetyScore"
+                           value="80"
+                           min="0"
+                           max="100"
+                           readonly>
+                    <span>/100</span>
+                </div>
+
+                <p>Current safety performance</p>
+            </div>
+
+            <!-- Speed Control -->
+            <div class="card">
+                <div class="emoji">🚙</div>
+                <h3>Speed Control</h3>
+
+                <select id="speedControl">
+                    <option value="good">Good</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="poor">Poor</option>
+                </select>
+
+                <p>Speed management</p>
+            </div>
+
+            <!-- Braking -->
+            <div class="card">
+                <div class="emoji">🛑</div>
+                <h3>Braking</h3>
+
+                <select id="braking">
+                    <option value="smooth">Smooth</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="hard">Hard</option>
+                </select>
+
+                <p>Braking behaviour</p>
+            </div>
+
+            <!-- Lane Control -->
+            <div class="card">
+                <div class="emoji">🛣️</div>
+                <h3>Lane Control</h3>
+
+                <select id="lane">
+                    <option value="safe">Safe</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="unsafe">Unsafe</option>
+                </select>
+
+                <p>Lane discipline</p>
+            </div>
+
+        </div>
+
+        <!-- Coaching Result -->
+        <div class="result-box">
+
+            <h2>Personalised Coaching Result</h2>
+
+            <div class="result-cards">
+
+                <div class="result-card">
+                    <h3>Performance</h3>
+                    <strong id="performance">--</strong>
+                    <p>Overall performance</p>
+                </div>
+
+                <div class="result-card">
+                    <h3>Coaching Level</h3>
+                    <strong id="coachingLevel">--</strong>
+                    <p>Recommended coaching</p>
+                </div>
+
+                <div class="result-card">
+                    <h3>Performance Score</h3>
+                    <strong id="score">--</strong>
+                    <p>Overall score</p>
+                </div>
+
+            </div>
+
+            <!-- Personalised Feedback -->
+            <div class="alert">
+                <h3>💡 Personalised Feedback</h3>
+
+                <p id="coachingMessage">
+                    Click "Generate Coaching" to receive personalised feedback.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Performance Tracking -->
+        <div class="tracking-box">
+
+            <h2>📈 Performance Tracking</h2>
+
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+
+            <p id="progressText">0% Performance</p>
+
+            <h3>Performance History</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Session</th>
+                        <th>Score</th>
+                        <th>Performance</th>
+                    </tr>
+                </thead>
+
+                <tbody id="historyTable"></tbody>
+            </table>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            Personalised Coaching &amp; Performance Tracking
+        </div>
+
+    </div>
+
+    <script src="module4.js"></script>
+
+</body>
+</html>

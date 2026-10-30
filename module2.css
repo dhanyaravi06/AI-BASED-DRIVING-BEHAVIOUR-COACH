@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #071b3a, #0b4f71, #07152e);
+    color: white;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #c8d8e8;
+    font-size: 16px;
+}
+
+
+/* Status Section */
+
+.status-section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.status-section h2 {
+    margin-bottom: 5px;
+}
+
+#monitorStatus {
+    color: #b9cbd9;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #00a8e8;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #008ec4;
+}
+
+
+/* Dashboard */
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+.value {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.value small {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.card p {
+    color: #b9cbd9;
+    font-size: 13px;
+}
+
+
+/* GPS */
+
+.gps-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 15px;
+    margin-top: 25px;
+}
+
+.gps-card h2 {
+    margin-bottom: 20px;
+}
+
+.gps-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gps-info div {
+    background: rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.gps-info span {
+    display: block;
+    color: #b9cbd9;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.gps-info strong {
+    font-size: 18px;
+}
+
+
+/* Data Collection */
+
+.collection {
+    margin-top: 25px;
+}
+
+.collection h2 {
+    margin-bottom: 15px;
+}
+
+.data-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.data-box p {
+    margin: 12px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    margin-top: 35px;
+    color: #aebdca;
+    font-size: 13px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .dashboard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gps-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .status-section {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}

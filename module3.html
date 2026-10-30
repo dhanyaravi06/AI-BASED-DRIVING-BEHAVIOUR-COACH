@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AI Driving Behaviour Analysis</title>
+
+    <!-- Module 3 CSS -->
+    <link rel="stylesheet" href="module3.css">
+
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- Header -->
+        <header class="header">
+
+            <h1>AI Driving Behaviour Coach</h1>
+
+            <p>
+                Module 3 - AI-Based Driving Behaviour & Risk Analysis
+            </p>
+
+        </header>
+
+
+        <!-- Top Section -->
+        <section class="top-box">
+
+            <div>
+
+                <h2>
+                    AI Driving Behaviour Analysis
+                </h2>
+
+                <p>
+                    Analyze driving data and identify
+                    behaviour and risk level.
+                </p>
+
+            </div>
+
+            <button onclick="analyzeDriving()">
+                Analyze Driving
+            </button>
+
+        </section>
+
+
+        <!-- Driving Data Cards -->
+        <section class="cards">
+
+
+            <!-- Speed -->
+            <div class="card">
+
+                <h3>🚗 Speed</h3>
+
+                <input
+                    type="number"
+                    id="speed"
+                    value="0">
+
+                <p>Current vehicle speed</p>
+
+            </div>
+
+
+            <!-- Acceleration -->
+            <div class="card">
+
+                <h3>⚡ Acceleration</h3>
+
+                <input
+                    type="number"
+                    id="acceleration"
+                    value="0"
+                    step="0.1">
+
+                <p>Current acceleration</p>
+
+            </div>
+
+
+            <!-- Braking -->
+            <div class="card">
+
+                <h3>🛑 Braking</h3>
+
+                <select id="braking">
+
+                    <option value="normal">
+                        Normal
+                    </option>
+
+                    <option value="hard">
+                        Hard
+                    </option>
+
+                </select>
+
+                <p>Braking behaviour</p>
+
+            </div>
+
+
+            <!-- Lane -->
+            <div class="card">
+
+                <h3>🛣️ Lane Movement</h3>
+
+                <select id="lane">
+
+                    <option value="stable">
+                        Stable
+                    </option>
+
+                    <option value="unsafe">
+                        Unsafe
+                    </option>
+
+                </select>
+
+                <p>Lane movement status</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Analysis Result -->
+        <section class="result-box">
+
+            <h2>
+                AI Analysis Result
+            </h2>
+
+
+            <div class="result-cards">
+
+
+                <!-- Behaviour -->
+                <div class="card">
+
+                    <h3>Behaviour</h3>
+
+                    <div
+                        class="result-value"
+                        id="behaviour">
+
+                        --
+
+                    </div>
+
+                </div>
+
+
+                <!-- Risk -->
+                <div class="card">
+
+                    <h3>Risk Level</h3>
+
+                    <div
+                        class="result-value"
+                        id="risk">
+
+                        --
+
+                    </div>
+
+                </div>
+
+
+                <!-- Safety Score -->
+                <div class="card">
+
+                    <h3>Safety Score</h3>
+
+                    <div
+                        class="result-value"
+                        id="score">
+
+                        --/100
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Safety Alert -->
+        <section class="alert">
+
+            <h2>
+                ⚠️ Safety Alert
+            </h2>
+
+            <p id="alert">
+                Click "Analyze Driving"
+                to view the driving analysis.
+            </p>
+
+        </section>
+
+
+        <!-- Module 4 Button -->
+        <section class="next-section">
+
+            <button
+                id="module4Button"
+                onclick="goToModule4()"
+                style="display: none;">
+
+                Continue to Personalized Coaching
+
+            </button>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+
+            <p>
+                AI-Based Driving Behaviour Coach © 2026
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <!-- Module 3 JavaScript -->
+    <script src="module3.js"></script>
+
+</body>
+
+</html>

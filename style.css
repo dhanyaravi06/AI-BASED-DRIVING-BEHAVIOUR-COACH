@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #082f4f,
+            #075579,
+            #08799b
+        );
+
+    color: white;
+}
+
+.container {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+.card {
+    width: 430px;
+
+    background: rgba(255, 255, 255, 0.10);
+
+    padding: 40px;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(255, 255, 255, 0.20);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.30);
+
+    backdrop-filter: blur(10px);
+
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 21px;
+
+    margin-bottom: 25px;
+
+    color: #dff8ff;
+}
+
+input,
+select {
+    width: 100%;
+
+    padding: 14px;
+
+    margin: 9px 0;
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    color: #222;
+
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border: 2px solid #08a9df;
+}
+
+button {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #08a9df;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0795c5;
+
+    transform: translateY(-2px);
+}
+
+p {
+    margin-top: 18px;
+
+    font-weight: bold;
+
+    color: #dff8ff;
+}
+
+@media (max-width: 600px) {
+
+    .card {
+        width: 100%;
+
+        padding: 30px 25px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
